@@ -6,6 +6,7 @@ Projeto de API completa de um blog desenvolvido em Nodejs com o framework Expres
  
  <p> ● CRUD completo de usuário.</p>
  ●  Autenticação completa de usuário com JWT.</p>
+ ●  Autenticação de usuário por Google Oauth2 utilizando Passport.</p>
  ●  Segurança com criptografia de senha e dados sensíveis com bcryptjs.</p>
  ●  Possibilidade de recuperação de senha de usuário de forma segura com JWT e bcryptjs e nodemailer.</p>
  ● Middlewares de autenticação JWT de usuário e de autorização de usuário admin.</p>
@@ -20,6 +21,7 @@ Projeto de API completa de um blog desenvolvido em Nodejs com o framework Expres
  ◼ TypeORM </p>
  ◼ Postgresql </p>
  ◼ Nodemailer </p>
+ ◼ Passport </p>
  ◼ JWT </p>
  ◼ Nodemon </p>
  ◼ Dotenv </p>
@@ -137,6 +139,15 @@ EMAIL_HOST = Hospedagem E-mail
 EMAIL_AUTH_USER = Usuário E-mail
 EMAIL_AUTH_PASS = Senha E-mail
 ```
+# Configurar Autenticação Google por Passport
+
+```
+GOOGLE_CLIENT_ID = client ID de sessão na Google Platform API.
+GOOGLE_CLIENT_SECRET  = Client Secret ID de sessão da Google Platform API.
+callbackURL = Deve ser passado o caminho exato de callback feito na Google Platform.
+```
+
+
 # Rodando aplicação na sua máquina
 
 1 - Clone o repositório
